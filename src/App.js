@@ -30,7 +30,7 @@ function App() {
                 <h2>{user.name}</h2>
                 <p>{user.username}</p>
                 <input type='text' placeholder='New Username...' onChange={(e) => setNewUsername(e.target.value)} />
-                <button onClick={() => dispatch(updateUsername({ id: user.id, username: newUsername}))}>Upload Username</button>
+                <button onClick={() => dispatch(updateUsername({ id: user.id, username: newUsername}))}>Update Username</button>
                 <button onClick={() => dispatch(deleteUser({ id: user.id }))}>Remove User</button>
               </div>
             )
